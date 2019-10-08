@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sfdx-ftw-assertions": "github:alpha-bytes/sfdx-ftw-assertions"
+  }
 }

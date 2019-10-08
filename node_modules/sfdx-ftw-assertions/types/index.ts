@@ -1,4 +1,4 @@
-declare interface Assertion{
+interface Assertion{
     /**
      * The logic that the assertion will attempt to validate (displayed to the user via stdout). 
      */
@@ -14,7 +14,7 @@ declare interface Assertion{
  * Instances of this class represent the simplest type of assertion, which provide for a 
  * simple list of Apex Sytem.assert... family of statements. 
  */
-export declare interface SimpleAssertion extends Assertion{ 
+export interface SimpleAssertion extends Assertion{ 
     /**
      * Implementing classes must provide a list of valid Apex System.assert... method variants. 
      * These statements will be run via anonymous Apex in the target org, with any failures being returned to the 
@@ -26,7 +26,7 @@ export declare interface SimpleAssertion extends Assertion{
 /**
  * Abstract class which all assertion suites must extend. 
  */
-export declare abstract class AssertionSuite{
+export abstract class AssertionSuite{
     /**
      * Array of metadata dependencies that will be deployed prior to running assertions. 
      */
