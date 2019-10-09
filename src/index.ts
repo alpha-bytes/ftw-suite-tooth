@@ -19,4 +19,4 @@ function globalCb(result: string): void{
     console.log(result); 
 }
 
-export default new SuiteTooth();
+exports = new SuiteTooth();

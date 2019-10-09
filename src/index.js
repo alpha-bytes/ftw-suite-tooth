@@ -20,4 +20,4 @@ const simple = {
 function globalCb(result) {
     console.log(result);
 }
-exports.default = new SuiteTooth();
+exports = new SuiteTooth();
