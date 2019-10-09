@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^12.7.12",
     "sfdx-ftw-assertions": "github:alpha-bytes/sfdx-ftw-assertions"
   }
 }
