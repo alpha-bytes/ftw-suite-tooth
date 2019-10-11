@@ -1,4 +1,4 @@
-interface Assertion{
+export interface Assertion{
     /**
      * The logic that the assertion will attempt to validate (displayed to the user via stdout). 
      */
@@ -35,4 +35,13 @@ export abstract class AssertionSuite{
      * The array of assertions to be run. Must be instances of a type that extends the abstract Assertion class.
      */
     abstract getAssertions(): Assertion[]; 
+
+    /**
+     * User-defined typeguard for runtime check of a putative assertion, to determine if it is simple. 
+     * @param assertion The assertion to check as simple
+     */
+    public static isSimpleAssertion(assertion: Assertion): assertion is SimpleAssertion{
+        let casted = assertion as SimpleAssertion; 
+        return casted.apexAssertion !== undefined && typeof casted.apexAssertion === 'string'; 
+    }
 }
